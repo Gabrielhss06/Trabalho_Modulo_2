@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Mysql {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/text_adventure_game";  // Substitua "seu_banco" pelo nome do banco de dados
+    private static final String URL = "jdbc:mysql://localhost:3306/jogo_textAdventure4";  // Substitua "seu_banco" pelo nome do banco de dados
     private static final String USER = "root";  // Usuário do MySQL
     private static final String PASSWORD = "@GabrielHSS06";  // Senha do MySQL
 
