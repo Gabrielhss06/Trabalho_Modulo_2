@@ -1,8 +1,9 @@
-import java.sql.Connection;
+import Model.Cena;
+import Model.Item;
+import Sistema.*;
+
 import java.util.List;
 import java.util.Scanner;
-
-import static repository.Mysql.getConnection;
 
 public class Main {
     public static void main(String[] args) {
@@ -49,14 +50,14 @@ public class Main {
                 String itemNome = comando.substring(4).trim();
                 boolean coletado = itemService.coletarItem(itemNome, idJogo);
                 if (!coletado) {
-                    System.out.println("Item não pode ser coletado ou não encontrado.");
+                    System.out.println("TENTE NOVAMENTE");
                 }
                 continue;
             }
 
             // Verificar o comando CHECK
             if (comando.startsWith("CHECK ")) {
-                String itemNome = comando.substring(6).trim(); // Obter o nome do item após "CHECK "
+                String itemNome = comando.substring(1).trim(); // Obter o nome do item após "CHECK "
                 String descricao = itemService.checkItem(itemNome);
                 System.out.println(descricao); // Exibir a descrição do item
                 continue;
@@ -78,7 +79,7 @@ public class Main {
 
             // Verificar o comando RESTART
             if (comando.equalsIgnoreCase("RESTART")) {
-                cenaAtualId = 4; // Redefine a cena atual para a cena inicial
+                cenaAtualId = 1; // Redefine a cena atual para a cena inicial
                 inventarioDAO.limparInventario(idJogo); // Limpa o inventário do jogador
                 System.out.println("O jogo foi reiniciado. Você está de volta à cena inicial.");
                 continue;

@@ -1,3 +1,6 @@
+package Sistema;
+
+import Model.Cena;
 import repository.Mysql;
 
 import java.sql.Connection;

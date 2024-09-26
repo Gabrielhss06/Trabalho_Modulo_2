@@ -1,5 +1,6 @@
+package Sistema;
 
-
+import Model.Item;
 import repository.Mysql;
 
 import java.sql.Connection;
@@ -15,7 +16,7 @@ public class Game {
     private Connection connection;
 
     public Game() {
-        this.cenaAtualId = 4; // ID da cena inicial
+        this.cenaAtualId = 1; // ID da cena inicial
         this.inventario = new ArrayList<>();
         this.connection = Mysql.getConnection();
     }
@@ -45,7 +46,7 @@ public class Game {
     }
 
     public void restartGame() {
-        cenaAtualId = 4; // Reinicia para a cena inicial
+        cenaAtualId = 1; // Reinicia para a cena inicial
         System.out.println("O jogo foi reiniciado!");
     }
 

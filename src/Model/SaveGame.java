@@ -1,3 +1,5 @@
+package Model;
+
 public class SaveGame {
     private int cenaAtualId;
     // Aqui você pode adicionar outros atributos que deseja salvar, como o inventário

@@ -1,13 +1,15 @@
+package Model;
+
 public class Item {
-    private int id;
+    private int id_Item;
     private String nome;
     private String descricao;
     private boolean podeSerColetado;
     private int idCena;
 
     // Getters e Setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    public int getId() { return id_Item; }
+    public void setId(int id) { this.id_Item = id; }
 
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }

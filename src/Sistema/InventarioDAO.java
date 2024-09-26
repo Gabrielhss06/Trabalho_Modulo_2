@@ -1,3 +1,6 @@
+package Sistema;
+
+import Model.Item;
 import repository.Mysql;
 
 import java.sql.Connection;

@@ -1,3 +1,5 @@
+package Model;
+
 public class Inventario {
     private int id;
     private int idItem;
