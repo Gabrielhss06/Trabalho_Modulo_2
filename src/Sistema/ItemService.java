@@ -14,7 +14,7 @@ public class ItemService {
     }
 
     public boolean coletarItem(String itemNome, int idJogo) {
-        if (idJogo == 6) { // FAZ PEGAR O ITEM NA SENA 5
+        if (idJogo == 5) { // FAZ PEGAR O ITEM NA SENA 5
             System.out.println("ESTE ITEM TEM UMA SENA ESPECIFICA!.");
             return false; // Retorna false se o jogador não estiver na cena 5
         }
